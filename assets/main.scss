@@ -1,0 +1,55 @@
+---
+---
+
+@import "minima";
+
+body {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} "roboto", serif;
+  color: #051e50;
+  line-height: 1.5;
+}
+
+.home-paragraph {
+    font-size: 18px;
+}
+
+.site-header {
+  border-top: 0.5rem solid #169fe6;
+}
+
+.post-link {
+  font-size: 34px;
+  color: #051e50 !important;
+}
+
+// a:visited {
+//   color: #000;
+// }
+
+@font-face {
+  font-family: "roboto";
+  src: url("../assets/fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-family: "roboto-bold";
+  src: url("../assets/fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "roboto-italic";
+  src: url("../assets/fonts/Roboto-Italic.ttf");
+}
+
+strong {
+  font-family: "roboto-bold";
+}
+
+em {
+  font-family: "roboto-italic";
+}
+
+.result li.active a {
+    color: lightgray;
+    cursor: default;
+}
