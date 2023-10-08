@@ -13,9 +13,9 @@ order: 3
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
     <span class="post-meta">{{ post.date | date: date_format }}</span>
     <h1>
-      <a class="post-link" href="{{ post.url | relative_url }}">
+      <p class="post-link">
         {{ post.title | escape }}
-      </a>
+      </p>
     </h1>
     {{ post.content }}
     <hr>
