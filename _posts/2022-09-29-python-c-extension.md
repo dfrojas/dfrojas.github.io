@@ -3,6 +3,7 @@ layout: post
 title:  "Building a simple C extension with Python."
 date:   2022-09-29 13:42:26 -0500
 category: software
+published: false
 ---
 
 Back in 2013, when I realized that it is possible to wrap C code into Python blew my mind. Luego, me puse a explorar librerias como Numpy y me di cuenta que usan extensiones en C engrapadas en Python. Me llamó la atención como hacerlo y como hacer un proceso computacional mas rápido para ahorrar costos en procesamiento de CPU. Por lo que hice un pequeño experimento para aprender a hacerlo a pequeña escala: Elegí un problema sencillo de algortimos de HacerRank y lo resolví con Python puro y con C llamandolo desde Python, en este artículo describiré un paso a paso de como desarrollar una extensión en C para Python y cuáles fueron los resultados obtenidos.
