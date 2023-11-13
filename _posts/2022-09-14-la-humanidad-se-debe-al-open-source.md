@@ -2,14 +2,13 @@
 layout: post
 title:  "La Humanidad se debe al Open Source."
 date:   2022-09-13 13:42:26 -0500
-category: ideas
+category: misc
+cover: /assets/img/humanidad-opensource-1.jpeg
+tags: open-source misc
+summary: Mi visión acerca de como la evolución de la humanidad ha estado profundamente arraigada por la filosofía del Open Source desde tiempos inmemoriales. Sin embargo, esta no es una referencia exclusiva al software, sino a un principio fundamental de colaboración y compartimiento de conocimiento que ha permitido a nuestra especie avanzar y prosperar a lo largo de la historia.
 ---
 
 La evolución de la humanidad ha estado profundamente arraigada por la filosofía del [Open Source](https://es.wikipedia.org/wiki/C%C3%B3digo_abierto){:target="_blank"} desde tiempos inmemoriales. Sin embargo, esta no es una referencia exclusiva al software, sino a un principio fundamental de colaboración y compartimiento de conocimiento que ha permitido a nuestra especie avanzar y prosperar a lo largo de la historia.
-
-{:refdef: style="text-align: center;"}
-![](/assets/img/humanidad-opensource.jpeg){: width="60%" }
-{: refdef}
 
 Cuando retrocedemos en el tiempo, encontramos ejemplos notables de cómo las herramientas más básicas de supervivencia fueron, en esencia, "Open Source". La rueda, que revolucionó el transporte y la industria, fue un conocimiento compartido que se difundió y mejoró de generación en generación. Los primitivos humanos, al confeccionar vestimenta para protegerse del frío y las lanzas para la caza, compartieron sus conocimientos libremente, lo que permitió la supervivencia de nuestras antiguas civilizaciones.
 

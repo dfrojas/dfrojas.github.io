@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Oceans
-permalink: /oceans/
+title: Diving
+permalink: /diving/
 order: 2
 ---
 

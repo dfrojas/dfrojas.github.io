@@ -1,6 +1,6 @@
 ---
 ---
-$content-width: 70%;
+$content-width: 80%;
 
 @import "minima";
 
@@ -23,9 +23,24 @@ body {
   color: #051e50 !important;
 }
 
-// a:visited {
-//   color: #000;
-// }
+.post-title-list {
+  margin-bottom: 0px;
+}
+
+.excerpt {
+  font-size: 16px;
+  color: #666666;
+  text-align: justify;
+}
+
+.label {
+  color: white;
+  border-radius: 5px;
+  padding: 4px;
+  background-color: gold;
+  font-size: 12px;
+  margin-right: 3px;
+}
 
 @font-face {
   font-family: "roboto";

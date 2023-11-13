@@ -19,22 +19,30 @@ And I live my life at the intersection of technology, underwater exploration, an
 
 2. 🐋 **Diving and ocean conservation:** I publish occasionally the journey of my dives. Join me in the fight to protect our oceans.
 
-3. 💡 **Random thoughts:** In the section “Ideas” I write my thoughts, notes, quotes or whatever about software and humanity. Just random opinions. I'm native Spanish speaker, only the content there will be in Spanish.
+3. 💡 **Misc:** In the section "Misc" I write my thoughts, notes, quotes or whatever about software and humanity. Just random opinions. I'm native Spanish speaker, only the content there will be in Spanish.
 
 4. 🎶 **Techno Music:** A curated list of tracks that I like. Feel the groove!
 
-In this space, you'll find a unique blend of my software development insights, scuba diving tales, techno music recommendations, and updates on my ocean conservation efforts. Welcome to my corner of the internet, where code, water, and music converge to create an extraordinary symphony of life. Together, let's make waves, both in the digital realm and beneath the surface of the deep blue sea. 🌊🌐🎶
-
 <div align="center" markdown="1">
+<br>
+<hr>
+<br>
 
 # Latest Post
 
 </div>
-{%- assign latest_posts = site.posts -%}
+
+{% assign latest_posts = site.posts | where_exp: "post", "post.category == 'misc' or post.category == 'software'" %}
 {%- for post in latest_posts limit:5 -%}
-    <br><a href="{{post.url}}">{{ post.title }}</a>
-{%- endfor -%}
-
-<!--I have made some - small - contributions to CPython (the core behind the Python programming language). I built and I'm maintaining an autoremediation system written in Python. Scuba diving overlaps with my passion for programming and I routinely work on scuba diving software written in Rust. I do all this just for fun and as a hobby.-->
-
+<div class="container text-center">
+  <div class="row">
+    <div class="col-md-2"><img src="{{ post.cover }}"></div>
+    <div class="col-md-10">
+      <h2 class="post-title-list"><a href="{{post.url | absolute_url }}">{{ post.title }}</a></h2>
+      <p>{% for tag in post.tags %}
+      <span class ="label"> {{ tag }} </span>
+      {% endfor %}</p>
+      <p class="excerpt">{{ post.summary }}</p>
+  </div>
 </div>
+{%- endfor -%}
