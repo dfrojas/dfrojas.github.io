@@ -13,7 +13,7 @@ layout: home
 
 <div class="home-paragraph"  markdown="1">
 
-And I live my life at the intersection of technology, underwater exploration, and the pulsating rhythms of techno music. My journey is a harmonious blend of programming, scuba diving adventures, deep-seated passion for ocean conservation and electronic music. Here, you'll find mainly four types of content:
+And I live my life at the intersection of technology, underwater exploration, and the pulsating rhythms of techno music. Here I write ocassionally about:
 
 1. 👨‍💻 **Software:** I like to build and experiment with the technologies I like: Containers, compilers, distributed systems, eBPF, programming languages, internals, etc. In this section, I publish only technical content about software.
 
