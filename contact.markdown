@@ -12,6 +12,6 @@ Alternatively, if you want, let's have a quick video call. I promise that I'm no
 </div>
 
 <!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/dfrojas/diego-rojas-coffe-chat" style="min-width:320px;height:700px;"></div>
+<div class="calendly-inline-widget" data-url="https://calendly.com/dfrojas/diego-rojas-coffe-chat" style="min-width:320px;height:800px;"></div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <!-- Calendly inline widget end -->

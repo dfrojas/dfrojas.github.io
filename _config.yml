@@ -23,7 +23,7 @@ email: hello@dfrojas.com
 author: "Diego Fernando Rojas"
 description: The human side of Software development.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://dfrojas.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dfrojas89
 github_username:  dfrojas
 instagram_username: dfrojast
