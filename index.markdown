@@ -6,18 +6,19 @@ layout: home
 
 # Hey there! I'm Diego Fernando Rojas 👋.
 
-## A software developer and diver from Colombia 🇨🇴
+### A software developer and diver from Colombia 🇨🇴
+### currently living between Barcelona 🇪🇸 and Berlin 🇩🇪
 <br>
 
 </div>
 
 <div class="home-paragraph"  markdown="1">
 
-And I live my life at the intersection of technology, underwater exploration, and the pulsating rhythms of techno music. Here I write ocassionally about:
+And I live my life at the intersection of technology, underwater exploration, and the pulsating rhythms of techno music. Here I publish ocassionally about:
 
-1. 👨‍💻 **Software:** I like to build and experiment with the technologies I like: Containers, compilers, distributed systems, eBPF, programming languages, internals, etc. In this section, I publish only technical content about software.
+1. 👨‍💻 **Software:** I experiment with the technologies I like. My main focus is profiling, performance and observability. However, from time to time, I could write about other topics like containers, compilers, distributed systems, programming languages and all about software internals.
 
-2. 🐋 **Diving and ocean conservation:** I publish occasionally the journey of my dives. Join me in the fight to protect our oceans.
+2. 🐋 **Diving and ocean conservation:** Since I started to dive back in 2006, I have become a direct witness to how we are killing the sea with our consumption practices. I'm fully involved in Ocean conservation efforts through storytelling and audiovisual and educational content . In this section, I document all this journey.
 
 3. 💡 **Misc:** In the section "Misc" I write my thoughts, notes, quotes or whatever about software and humanity. Just random opinions. I'm native Spanish speaker, only the content there will be in Spanish.
 

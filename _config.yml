@@ -28,6 +28,7 @@ twitter_username: dfrojas89
 github_username:  dfrojas
 instagram_username: dfrojast
 permalink: /:categories/:title:output_ext
+google_analytics: G-K0VY1W90KD
 
 # Build settings
 theme: minima
