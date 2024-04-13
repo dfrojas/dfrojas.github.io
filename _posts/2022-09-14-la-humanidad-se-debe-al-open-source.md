@@ -1,9 +1,8 @@
 ---
 layout: post
-title:  "La Humanidad se debe al Open Source."
-date:   2022-09-13 13:42:26 -0500
+title: "La Humanidad se debe al Open Source."
+date:  2022-09-13 13:42:26 -0500
 category: misc
-cover: /assets/img/humanidad-opensource-1.jpeg
 tags: open-source misc
 summary: Mi visión acerca de como la evolución de la humanidad ha estado profundamente arraigada por la filosofía del Open Source desde tiempos inmemoriales. Sin embargo, esta no es una referencia exclusiva al software, sino a un principio fundamental de colaboración y compartimiento de conocimiento que ha permitido a nuestra especie avanzar y prosperar a lo largo de la historia.
 ---
