@@ -5,6 +5,7 @@ date: 2024-04-13 -0500
 tags: software rust
 category: software
 published: true
+emoji: 👨‍💻
 ---
 
 In [Open Water](https://github.com/dfrojas/openwater){:target="_blank"}, I needed to keep my project organized while having multiple entrypoints: CLI, API and the Library. To do that, I found that I need to specify them in Cargo.toml. Take a look from line 22 to line 33 in the folliwing snippet. I have a CLI application with its own **main** entrypoint, also API with its own **main** and a library type that also needs to be addressed. If you need to keep your Rust project organized while having multiple **main**, do this approach:

@@ -1,28 +1,27 @@
 ---
 layout: page
-title: Diving
-permalink: /diving/
+title: Oceans
+permalink: /oceans/
 order: 2
 ---
 
 <div markdown="1">
-<ul class="post-list">
-  {%- for post in site.posts -%}
-  {% if post.category == "oceans" %}
-  <li>
-    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    <span class="post-meta">{{ post.date | date: date_format }}</span>
-    <h1>
-      <a class="post-link" href="{{ post.url | relative_url }}">
-        {{ post.title | escape }}
-      </a>
-    </h1>
-    {{ post.content }}
-    <hr>
-  </li>
-  {% endif %}
-  {%- endfor -%}
-
-
-</ul>
+  <div class="container-fluid">
+  <div class="row">
+    {%- for post in site.posts -%}
+    {% if post.category == "oceans" %}
+      <div class="col-lg-4">
+        <a href="{{ post.url }}">
+          <img src="{{ post.image }}">
+          <div align="center">
+            <h2 class="post-title-list">{{ post.title }}</h2>
+            {{ post.place }}
+          </div>
+        </a>
+      </div>
+    {% endif %}
+    <br><br>
+    {%- endfor -%}
+  </div>
+  </div>
 </div>

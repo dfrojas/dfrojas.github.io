@@ -33,12 +33,16 @@ And I live my life at the intersection of technology, underwater exploration, an
 
 </div>
 
-{% assign latest_posts = site.posts | where_exp: "post", "post.category == 'misc' or post.category == 'software'" %}
+{% assign latest_posts = site.posts | where_exp: "post", "post.category == 'misc' or post.category == 'software' or post.category == 'oceans'" %}
 <div class="container"  markdown="1">
 {%- for post in latest_posts limit:5 -%}
   <div class="row">
     <div class="col-md-12">
-      <h2 class="post-title-list"><a href="{{post.url | absolute_url }}">{{ post.title }}</a></h2>
+      <h2 class="post-title-list">
+      <a href="{{post.url | absolute_url }}">
+        {{ post.title }} {{ post.emoji }}
+        </a>
+      </h2>
       <br>
     </div>
 {%- endfor -%}
