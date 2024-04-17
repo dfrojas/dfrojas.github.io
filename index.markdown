@@ -20,7 +20,7 @@ And I live my life at the intersection of technology, underwater exploration, an
 
 2. 🐋 **Diving and ocean conservation:** Since I started to dive back in 2006, I have become a direct witness to how we are killing the sea with our consumption practices. I'm fully involved in Ocean conservation efforts through storytelling and audiovisual and educational content . In this section, I document all this journey.
 
-3. 💡 **Misc:** In the section "Misc" I write my thoughts, notes, quotes or whatever about software and humanity. Just random opinions. I'm native Spanish speaker, only the content there will be in Spanish.
+3. 💡 **Misc:** Here I write my thoughts, notes, quotes or whatever about software and humanity. Just random opinions. I'm native Spanish speaker, so the content in this section will be in Spanish mainly.
 
 4. 🎶 **Techno Music:** A curated list of tracks that I like. Feel the groove!
 
