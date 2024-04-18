@@ -9,5 +9,5 @@ emoji: 🐋
 ---
 
 <div align="center" markdown="1">
-![](/assets/img/oceans/mero.jpg)
+![](/assets/img/oceans/mero.jpg){: width="800" }
 </div>

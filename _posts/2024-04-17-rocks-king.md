@@ -1,13 +1,13 @@
 ---
 layout: oceans
-title:  "León Marino"
+title:  "Rock's King"
 category: oceans
 published: true
 place: La Ventana, Baja California, 2023
-image: /assets/img/oceans/leon-marino.jpg
+image: /assets/img/oceans/rocks-king.jpg
 emoji: 🐋
 ---
 
 <div align="center" markdown="1">
-![](/assets/img/oceans/leon-marino.jpg)
+![](/assets/img/oceans/rocks-king.jpg){: width="800" }
 </div>
