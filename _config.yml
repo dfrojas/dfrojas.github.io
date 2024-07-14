@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: /home
+title: 127.0.0.1
 email: hello@dfrojas.com
 author: "Diego Fernando Rojas"
 description: The human side of Software development.
