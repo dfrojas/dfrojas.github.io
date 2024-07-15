@@ -14,13 +14,13 @@ layout: home
 
 <div class="home-paragraph"  markdown="1">
 
-And I live my life at the intersection of technology, underwater exploration, and the pulsating rhythms of techno music. Here I publish ocassionally about:
+And I live my life at the intersection of technology, underwater exploration, and the pulsating rhythms of techno music. Here, I publish occasionally about:
 
-1. 👨‍💻 **Software:** I experiment with the technologies I like. My main focus is profiling, performance and observability. However, from time to time, I could write about other topics like containers, compilers, distributed systems, programming languages and all about software internals.
+1. 👨‍💻 **Software:** I enjoy experimenting with software tools. My main focus is profiling, performance, and observability. However, occasionally, I could write about other topics like containers, architecture, tricks, compilers, distributed systems, programming languages, and everything in between.
 
-2. 🐋 **Diving and ocean conservation:** Since I started to dive back in 2006, I have become a direct witness to how we are killing the sea with our consumption practices. I'm fully involved in Ocean conservation efforts through storytelling and audiovisual and educational content . In this section, I document all this journey.
+2. 🐋 **Diving and ocean conservation:** Since I started diving in 2006, I have become a direct witness to how our consumption practices are killing the sea. I'm fully involved in Ocean conservation efforts through storytelling, audiovisual content, and educational content. In this section, I document this journey.
 
-3. 💡 **Misc:** Here I write my thoughts, notes, quotes or whatever about software and humanity. Just random opinions. I'm native Spanish speaker, so the content in this section will be in Spanish mainly.
+3. 💡 **Misc:** Here, I write my thoughts, notes, quotes, or whatever about software and humanity. These are just random opinions. I'm a native Spanish speaker, so the content in this section will be mainly in Spanish.
 
 4. 🎶 **Techno Music:** A curated list of tracks that I like. Feel the groove!
 
