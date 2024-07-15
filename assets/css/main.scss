@@ -3,6 +3,8 @@
 $content-width: 80%;
 
 @import "minima";
+@import "custom-bootstrap";
+
 
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} "roboto", serif;
@@ -65,17 +67,17 @@ body {
 
 @font-face {
   font-family: "roboto";
-  src: url("../assets/fonts/Roboto-Light.ttf");
+  src: url("../../assets/fonts/Roboto-Light.ttf");
 }
 
 @font-face {
   font-family: "roboto-bold";
-  src: url("../assets/fonts/Roboto-Bold.ttf");
+  src: url("../../assets/fonts/Roboto-Bold.ttf");
 }
 
 @font-face {
   font-family: "roboto-italic";
-  src: url("../assets/fonts/Roboto-Italic.ttf");
+  src: url("../../assets/fonts/Roboto-Italic.ttf");
 }
 
 strong {

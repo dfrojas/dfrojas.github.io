@@ -1,6 +1,12 @@
+# Native
 _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
-vendor
+
+# Miscellaneous
 .DS_Store
+
+# Frontend
+node_modules
+package-lock.json
