@@ -54,8 +54,8 @@ Although we can pass all the configurations we will write in this file through t
   <figcaption>File: .sops.yaml</figcaption>
 {% highlight yaml %}
 creation_rules:
- - path_regex: /*secrets(\.encrypted)?.yaml$
- - age: agethe-public-key-generated-by-age
+  - path_regex: /*secrets(\.encrypted)?.yaml$
+    age: agethe-public-key-generated-by-age
 {% endhighlight %}
 </figure>
 
@@ -83,9 +83,9 @@ a_password: my_password_xyz
 
 Now, let's encrypt it:
 
-`sops encrypt --age agethe-public-key-generated-by-age secrets.yaml > secrets.encrypted.yaml`
+`sops --encrypt secrets.yaml > secrets.encrypted.yaml`
 
-_The value passed to the --age argument, is your **public** key_
+_sops will know that you are using age, because of the configuration in .sops.yaml_
 
 It'll generate a _secrets.encrypted.yaml_ that will look like something like this:
 
