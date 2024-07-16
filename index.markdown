@@ -6,7 +6,7 @@ layout: home
 
 # Hey there! I'm Diego Fernando Rojas 👋.
 
-### A software developer and diver from Colombia 🇨🇴
+### A software developer, diver and (soon) an electronic producer music from Colombia 🇨🇴
 ### currently living between Barcelona 🇪🇸 and Berlin 🇩🇪
 <br>
 
@@ -14,33 +14,82 @@ layout: home
 
 <div class="home-paragraph"  markdown="1">
 
-And I live my life at the intersection of technology, underwater exploration, and the pulsating rhythms of techno music. Here, I publish occasionally about:
+I live at the intersection of technology, underwater exploration, and techno music. This site shares my interests in:
 
-1. 👨‍💻 **Software:** I enjoy experimenting with software tools. My main focus is profiling, performance, and observability. However, occasionally, I could write about other topics like containers, architecture, tricks, compilers, distributed systems, programming languages, and everything in between.
+1. 👨‍💻 **Software:** Share and bookmark various things I learned daily. Also, share my experiments about profiling, performance, observability, containers, architecture, tricks, compilers, distributed systems, programming languages, and everything else.
 
-2. 🐋 **Diving and ocean conservation:** Since I started diving in 2006, I have become a direct witness to how our consumption practices are killing the sea. I'm fully involved in Ocean conservation efforts through storytelling, audiovisual content, and educational content. In this section, I document this journey.
+2. 🐋 **Diving and ocean conservation:** Documenting my journey in ocean protection through storytelling.
 
-3. 💡 **Misc:** Here, I write my thoughts, notes, quotes, or whatever about software and humanity. These are just random opinions. I'm a native Spanish speaker, so the content in this section will be mainly in Spanish.
+3. 💡 **Misc:** Short-format notes about software and humanity, mainly in Spanish.
 
-4. 🎶 **Techno Music:** A curated list of tracks that I like. Feel the groove!
+4. 🎶 **Techno Music:** A curated list of my favorite tracks.
 
 <div align="center" markdown="1">
 <br>
 <hr>
 <br>
 
-# Latest Post
-
+# Latest Software posts 👨‍💻
+<br>
 </div>
 
-{% assign latest_posts = site.posts | where_exp: "post", "post.category == 'misc' or post.category == 'software' or post.category == 'oceans'" %}
+{% assign latest_posts = site.posts | where_exp: "post", "post.category == 'software'" %}
 <div class="container"  markdown="1">
 {%- for post in latest_posts limit:5 -%}
   <div class="row">
     <div class="col-md-12">
       <h2 class="post-title-list">
       <a href="{{post.url | absolute_url }}">
-        {{ post.title }} {{ post.emoji }}
+        {{ post.title }}
+        </a>
+      </h2>
+      <br>
+    </div>
+{%- endfor -%}
+</div>
+
+<div align="center" markdown="1">
+<br>
+<hr>
+<br>
+
+# Latest Oceans conservation posts 🐋
+<br>
+
+</div>
+
+{% assign latest_posts = site.posts | where_exp: "post", "post.category == 'oceans'" %}
+<div class="container"  markdown="1">
+{%- for post in latest_posts limit:5 -%}
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="post-title-list">
+      <a href="{{post.url | absolute_url }}">
+        {{ post.title }}
+        </a>
+      </h2>
+      <br>
+    </div>
+{%- endfor -%}
+</div>
+
+<div align="center" markdown="1">
+<br>
+<hr>
+<br>
+
+# Latest random notes 💡
+<br>
+</div>
+
+{% assign latest_posts = site.posts | where_exp: "post", "post.category == 'misc'" %}
+<div class="container"  markdown="1">
+{%- for post in latest_posts limit:5 -%}
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="post-title-list">
+      <a href="{{post.url | absolute_url }}">
+        {{ post.title }}
         </a>
       </h2>
       <br>
