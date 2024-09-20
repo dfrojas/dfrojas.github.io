@@ -1,5 +1,4 @@
 ---
-layout: oceans
 title:  "Yellow & Blue"
 category: oceans
 published: true
@@ -9,5 +8,4 @@ emoji: 🐋
 ---
 
 <div align="center" markdown="1">
-![](/assets/img/oceans/mero.jpg){: width="800" }
 </div>
