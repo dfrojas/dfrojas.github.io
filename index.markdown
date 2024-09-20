@@ -14,9 +14,9 @@ layout: home
 
 <div class="home-paragraph"  markdown="1">
 
-I live at the intersection of technology, underwater exploration, and techno music. This site shares my interests in:
+In this site shares my interests in:
 
-1. 👨‍💻 **Software:** Share and bookmark various things I learned daily. Also, share my experiments about profiling, performance, observability, containers, architecture, tricks, compilers, distributed systems, programming languages, and everything else.
+1. 👨‍💻 **Software:** Mainly focused in eBPF and observability. Also one or another experiment with different technologies like Rust, Ruby, Python, containers, AI, etc.
 
 2. 🐋 **Diving and ocean conservation:** Documenting my journey in ocean protection through storytelling.
 
