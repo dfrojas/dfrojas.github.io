@@ -8,7 +8,7 @@ order: 2
 <body class="oceans-layout">
 <div class="ocean-hero">
   <video autoplay loop muted playsinline id="bgVideo">
-    <source src="/assets/video/oceans/GH017503.mp4" type="video/mp4">
+    <source src="/assets/video/oceans/GH017503-4k.mp4" type="video/mp4">
   </video>
   <script>
     document.getElementById('bgVideo').playbackRate = 0.7; // Half speed
