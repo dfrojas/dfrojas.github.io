@@ -1,0 +1,40 @@
+---
+---
+
+.post-container {
+  margin-top: 2rem;
+}
+
+.post-header {
+  margin-bottom: 2rem;
+}
+
+.post-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-meta {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.post-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.post-sidebar {
+  padding-left: 2rem;
+  border-left: 1px solid #e8e8e8;
+}
+
+@media screen and (max-width: 768px) {
+  .post-sidebar {
+    border-left: none;
+    border-top: 1px solid #e8e8e8;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-left: 0;
+  }
+}
