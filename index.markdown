@@ -23,6 +23,3 @@ In this site shares my interests in:
 3. 💡 **Misc:** Short-format notes about software and humanity, mainly in Spanish.
 
 4. 🎶 **Techno Music:** A curated list of my favorite tracks.
-
-<div align="center" markdown="1">
-<br>

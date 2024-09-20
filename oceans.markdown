@@ -5,10 +5,14 @@ permalink: /oceans/
 order: 2
 ---
 
+<body class="oceans-layout">
 <div class="ocean-hero">
   <video autoplay loop muted playsinline id="bgVideo">
     <source src="/assets/video/oceans/GH017503.mp4" type="video/mp4">
   </video>
+  <script>
+    document.getElementById('bgVideo').playbackRate = 0.7; // Half speed
+  </script>
   <div class="hero-content">
     <h1>Dive Into a World of Wonder and Urgency</h1>
     <p>Our oceans are the lifeblood of Earth, covering 71% of our planet's surface and holding 97% of its water. They are not just vast bodies of blue – they are the cradle of life, the regulator of our climate, and the frontier of human exploration.</p>
@@ -92,6 +96,8 @@ order: 2
     <iframe width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
 </div>
+
+</body>
 
 <script>
 document.getElementById('watchVideoBtn').onclick = function() {
