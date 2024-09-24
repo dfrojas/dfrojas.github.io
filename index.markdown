@@ -24,7 +24,6 @@ In this site shares my interests in:
 
 4. 🎶 **Techno Music:** A curated list of my favorite tracks.
 
-<br>
 <hr>
 
 ## My Open Source contributions
@@ -35,32 +34,52 @@ In this site shares my interests in:
 
 <hr>
 
+<div markdown="1">
+## Latest blog posts
+{% assign latest_posts = site.posts | where_exp: "post", "post.category == 'software'" %}
+<ul>
+{%- for post in latest_posts limit:5 -%}
+  <li>
+    <a href="{{ post.url | relative_url }}">
+      {{ post.title | escape }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
+</div>
+
+<hr>
+
 ## My hobby projects
 
-<div markdown="1" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-  
-  <div style="flex-basis: 48%; margin-bottom: 20px; display: flex; align-items: flex-start;">
-    <img src="/assets/img/openwater-logo.jpeg" alt="Project 1 Thumbnail" style="max-width: 150px; height: auto; margin-right: 15px;">
-    <div>
-      <h3><a href="https://github.com/dfrojas/openwater" target="_blank">Open Water</a></h3>
-      <p>A desktop application to process dive logs, written in Rust.</p>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="d-flex align-items-start">
+      <img src="/assets/img/openwater-logo.jpeg" alt="Project 1 Thumbnail" class="img-fluid me-3" style="max-width: 100px;">
+      <div>
+        <a href="https://github.com/dfrojas/openwater" target="_blank">Open Water</a>
+        <p>A desktop application to process dive logs, written in Rust.</p>
+      </div>
     </div>
   </div>
 
-  <div style="flex-basis: 48%; margin-bottom: 20px; display: flex; align-items: flex-start;">
-    <img src="/assets/img/yubarta_whale_logo.png" alt="Project 2 Thumbnail" style="max-width: 150px; height: auto; margin-right: 15px;">
-    <div>
-      <h3><a href="https://github.com/dfrojas/yubarta" target="_blank">Yubarta</a></h3>
-      <p>An application for deploying eBPF programs. It provides a simple and efficient way to manage eBPF deployments through a RESTful API and a command-line interface.</p>
+  <div class="col">
+    <div class="d-flex align-items-start">
+      <img src="/assets/img/mobula.png" alt="Mobula Thumbnail" class="img-fluid me-3" style="max-width: 100px;">
+      <div>
+        <a href="https://github.com/dfrojas/yubarta" target="_blank">Mobula</a>
+        <p>A simple Version Control System written in different languages.</p>
+      </div>
     </div>
   </div>
 
-  <div style="flex-basis: 48%; margin-bottom: 20px; display: flex; align-items: flex-start;">
-    <img src="/assets/img/mobula.png" alt="Project 2 Thumbnail" style="max-width: 150px; height: auto; margin-right: 15px;">
-    <div>
-      <h3><a href="https://github.com/dfrojas/yubarta" target="_blank">Mobula</a></h3>
-      <p>A simple Version Control Sytem written in different languages.</p>
+  <div class="col">
+    <div class="d-flex align-items-start">
+      <img src="/assets/img/yubarta_whale_logo.png" alt="Project 2 Thumbnail" class="img-fluid me-3" style="max-width: 100px;">
+      <div>
+        <a href="https://github.com/dfrojas/yubarta" target="_blank">Yubarta</a>
+        <p>An application for deploying eBPF programs at scale using declarative configuration.</p>
+      </div>
     </div>
   </div>
-
 </div>

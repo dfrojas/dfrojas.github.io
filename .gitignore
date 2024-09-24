@@ -9,7 +9,6 @@ _site
 
 # Frontend
 node_modules
-package-lock.json
 
 # History
 .history/*

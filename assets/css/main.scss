@@ -10,6 +10,7 @@ body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} "roboto", serif;
   color: #051e50;
   line-height: 1.5;
+  background-color: white;
 }
 
 .home-paragraph {
@@ -17,7 +18,23 @@ body {
 }
 
 .site-header {
-  border-top: 0.5rem solid #169fe6;
+  border-top: 0.5rem solid #43b152; // Default color for Home and Software
+}
+
+.site-header-software {
+  border-top-color: #18354c;
+}
+
+.site-header-oceans {
+  border-top-color: #169fe6;
+}
+
+.site-header-misc {
+  border-top-color: #cbb35c;
+}
+
+.site-header-music {
+  border-top-color: #000000;
 }
 
 .post-link {
@@ -79,6 +96,6 @@ em {
 }
 
 hr {
-  margin-bottom: 40px;
-  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-top: 30px;
 }
