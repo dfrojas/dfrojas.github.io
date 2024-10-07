@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Misc
-permalink: /misc/
+title: Notes
+permalink: /notes/
 order: 3
 ---
 
 <div markdown="1">
 <ul class="post-list">
   {%- for post in site.posts -%}
-  {% if post.category == "misc" %}
+  {% if post.category == "notes" %}
   <li>
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
     <span class="post-meta">{{ post.date | date: date_format }}</span>

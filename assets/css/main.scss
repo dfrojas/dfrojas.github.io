@@ -8,9 +8,13 @@ $content-width: 80%;
 
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} "roboto", serif;
-  color: #051e50;
+  color: #333333;
   line-height: 1.5;
   background-color: white;
+}
+
+a:visited {
+  color: #333333;
 }
 
 .home-paragraph {
@@ -29,7 +33,7 @@ body {
   border-top-color: #169fe6;
 }
 
-.site-header-misc {
+.site-header-notes {
   border-top-color: #cbb35c;
 }
 
@@ -39,7 +43,7 @@ body {
 
 .post-link {
   font-size: 34px;
-  color: #051e50 !important;
+  color: #333333 !important;
 }
 
 .copyright {
