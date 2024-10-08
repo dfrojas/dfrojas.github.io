@@ -7,7 +7,10 @@ $content-width: 80%;
 
 
 body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} "roboto", serif;
+  font-family: "Roboto", serif;
+  font-weight: $base-font-weight;
+  font-size: #{$base-font-size};
+  line-height: #{$base-line-height};
   color: #333333;
   line-height: 1.5;
   background-color: white;

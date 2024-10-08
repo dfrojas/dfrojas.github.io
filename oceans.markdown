@@ -1,5 +1,5 @@
 ---
-layout: full-width
+layout: mid-full
 title: Oceans
 permalink: /oceans/
 order: 2
@@ -9,28 +9,49 @@ order: 2
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!-- 
-<div class="ocean-hero">
-  <video autoplay loop muted playsinline id="bgVideo">
-    <source src="/assets/video/oceans/GH017503-4k.mp4" type="video/mp4">
-  </video>
-  <script>
-    document.getElementById('bgVideo').playbackRate = 0.7;
-  </script>
-  <div class="hero-content">
-    <h1>Dive Into a World of Wonder and Urgency</h1>
-    <p>Our oceans are the lifeblood of Earth, covering 71% of our planet's surface and holding 97% of its water. They are not just vast bodies of blue – they are the cradle of life, the regulator of our climate, and the frontier of human exploration.</p>
+
+<div class="container-fluid">
+    <div class="row m-auto justify-content-center align-items-center">
+        <div class="col-md-2">
+            <img src="/assets/img/oceans/presentation.jpg" class="img-fluid img-thumbnail me-diving">
+        </div>
+        <div class="col-md-5">
+            <p class="dive-map-subtitle">
+                My mission is to travel the world spreading the message of ocean conservation and sustainability.
+                Mainly about seafood consumption and its impact on our oceans.
+            </p>
+        </div>
+    </div>
+    <h1 class="dive-map-title text-center"><strong>My Diving Expeditions</strong></h1>
+    <div id="diveMap"></div>
+</div>
+
+<div class="container-fluid seafood-consumption-section">
+    <h2 class="text-center mb-4">
+        The impact of your seafood consumption on our Oceans
+    </h2>
+    <p class="text-center lead">
+        Our seafood choices have a profound impact on the health of our oceans. By making informed decisions, we can help protect marine ecosystems and ensure sustainable fish populations for future generations.
+    </p>
+</div>
+
+<div class="ocean-hero-container">
+  <div class="ocean-hero">
+    <video autoplay loop muted playsinline id="bgVideo1">
+      <source src="/assets/video/oceans/GH017503-4k.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <h1>Dive Into a World of Wonder and Urgency</h1>
+      <p>Our oceans are the lifeblood of Earth, covering 71% of our planet's surface and holding 97% of its water. They are not just vast bodies of blue – they are the cradle of life, the regulator of our climate, and the frontier of human exploration.</p>
+    </div>
   </div>
-</div> -->
-
-<div align="center">
-<div class="dive-map-container">
-  <h2>My Diving Expeditions</h2>
-  <div id="diveMap"></div>
-</div>
 </div>
 
-<!-- Bootstrap Modal -->
+<script>
+  document.getElementById('bgVideo1').playbackRate = 0.7;
+</script>
+
+<!-- Expeditions Modal -->
 <div class="modal fade" id="diveModal" tabindex="-1" role="dialog" aria-labelledby="diveModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -83,7 +104,7 @@ order: 2
     dahab: {
       title: "Dahab, Egypt",
       description: "Witnessed the breathtaking beauty of the world's largest coral reef system.",
-      image: "/assets/img/oceans/GOPR7502.jpg",
+      image: "/assets/img/oceans/GOPR7502-1.jpg",
       coords: [28.511427650376998, 34.52234963152]
     },
     cozumel: {
@@ -113,7 +134,7 @@ order: 2
     gorgona: {
       title: "Gorgona, Colombia",
       description: "Explored vibrant coral reefs teeming with tropical fish.",
-      image: "/assets/images/dives/gorgona.jpg",
+      image: "/assets/img/oceans/GOPR7387.jpg",
       coords: [2.970218942284847, -78.19628910413127]
     }
   };
