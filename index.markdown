@@ -7,7 +7,7 @@ layout: home
 # Hey there! I'm Diego Fernando Rojas.
 
 ### A software engineer, diver, and (soon) an electronic producer music from Colombia 🇨🇴
-### currently living between Barcelona 🇪🇸, Berlin 🇩🇪, and Cali 🇨🇴
+### currently living between Barcelona 🇪🇸 and Cali 🇨🇴
 <br>
 
 </div>
@@ -16,7 +16,7 @@ layout: home
 
 In this site I share my interests in:
 
-1. 👨‍💻 **Software:** Mainly focused in eBPF and observability. Also one or another experiment with different tools like Rust, containers, AI, etc. You can read my blog posts [<u>here</u>](/software/).
+1. 👨‍💻 **Software:** Mainly focused in eBPF and performance engineering. Also one or another experiment with different tools like Rust, containers, AI, etc. You can read my blog posts [<u>here</u>](/software/).
 
 2. 🐋 **Diving and ocean conservation:** Documenting my journey in ocean protection through storytelling.
 
