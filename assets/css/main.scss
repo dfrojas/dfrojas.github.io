@@ -24,12 +24,17 @@ a:visited {
     font-size: 18px;
 }
 
-.site-header {
-  border-top: 0.5rem solid #169fe6; // Default color for Home
+.site-title {
+  justify-content: center;
+  display: flex;
+  width: 100%;
 }
 
-.site-header-software {
-  border-top-color: #18354c;
+.site-header {
+  border-top: 0.5rem solid #169fe6; // Default color for Home
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .site-header-oceans {

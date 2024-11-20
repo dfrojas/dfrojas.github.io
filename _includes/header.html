@@ -1,14 +1,4 @@
-<header class="site-header
-    {% if page.url contains '/oceans/' %}
-        site-header-oceans
-    {% elsif page.url contains '/notes/' %}
-        site-header-notes
-    {% elsif page.url contains '/techno/' %}
-        site-header-music
-    {% elsif page.url contains '/software/' %}
-        site-header-software
-    {% endif %}"
-    role="banner">
+<header class="site-header">
 
   <div class="wrapper">
     {%- assign default_paths = site.pages | sort:"order" | map: "path" -%}
