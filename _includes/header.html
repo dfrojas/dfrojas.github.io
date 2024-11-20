@@ -1,6 +1,10 @@
 <header class="site-header">
-
   <div class="wrapper">
+    <div class="logo-face" style="margin-bottom: 0;">
+      <a href="/">
+        <img src="/assets/img/face.png" alt="Diego Rojas" class="profile-pic" width="80">
+      </a>
+    </div>
     {%- assign default_paths = site.pages | sort:"order" | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths  -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
@@ -16,7 +20,7 @@
           </span>
         </label>
 
-        <div class="trigger">
+        <div class="trigger" style="float: none; text-align: center;">
           {%- for path in page_paths -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {%- if my_page.title -%}

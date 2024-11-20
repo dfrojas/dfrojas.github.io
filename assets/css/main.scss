@@ -29,10 +29,29 @@ a:visited {
     font-size: 18px;
 }
 
-.site-title {
-  justify-content: center;
-  display: flex;
+.project-card-img {
   width: 100%;
+  object-fit: contain;
+  aspect-ratio: 1 / 1;
+}
+
+.logo-face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: block;
+}
+
+.site-nav {
+  float: none;
+  text-align: center;
+  line-height: 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .site-header {
