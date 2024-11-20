@@ -66,7 +66,7 @@ Projects that I work from time to time for fun.
       <div class="card">
         <div class="row g-0">
           <div class="col-3">
-            <img src="/assets/img/openwater-logo.jpeg" class="img-fluid h-100 project-card-img" alt="Open Water">
+            <img src="/assets/img/openwater-logo.jpeg" class="img-fluid project-card-img" alt="Open Water">
           </div>
           <div class="col-9">
             <div class="card-body">
@@ -83,7 +83,7 @@ Projects that I work from time to time for fun.
       <div class="card">
         <div class="row g-0">
           <div class="col-3">
-            <img src="/assets/img/yubarta_whale_logo.png" class="img-fluid h-100 project-card-img" alt="Yubarta">
+            <img src="/assets/img/yubarta_whale_logo.png" class="img-fluid project-card-img" alt="Yubarta">
           </div>
           <div class="col-9">
             <div class="card-body">
@@ -103,7 +103,7 @@ Projects that I work from time to time for fun.
       <div class="card">
         <div class="row g-0">
           <div class="col-3">
-            <img src="/assets/img/mobula.png" class="img-fluid h-100 project-card-img" alt="Mobula">
+            <img src="/assets/img/mobula.png" class="img-fluid project-card-img" alt="Mobula">
           </div>
           <div class="col-9">
             <div class="card-body">
