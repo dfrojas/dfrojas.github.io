@@ -16,6 +16,11 @@ body {
   background-color: white;
 }
 
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
 a:visited {
   color: #333333;
 }
@@ -50,8 +55,12 @@ a:visited {
 }
 
 .post-link {
-  font-size: 34px;
+  font-size: 1.5rem;
   color: #333333 !important;
+}
+
+.index-section-title {
+  margin-bottom: 1.5rem;
 }
 
 .copyright {

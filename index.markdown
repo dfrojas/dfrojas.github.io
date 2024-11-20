@@ -5,10 +5,11 @@ layout: home
 <div align="center" markdown="1">
 
 # Hey there! I'm Diego Fernando Rojas.
-
-### I'm a software engineer, diver, and (soon) an electronic producer music from Colombia 🇨🇴
-### currently living between Barcelona 🇪🇸 and Cali 🇨🇴
-<br>
+&nbsp;
+#### I'm a software engineer, diver, and (soon) an electronic producer music from Colombia 🇨🇴
+&nbsp;
+#### Currently living between Berlin 🇩🇪, Barcelona 🇪🇸 and Cali 🇨🇴
+&nbsp;
 
 </div>
 
@@ -26,7 +27,27 @@ In this site I share my interests in:
 
 <hr>
 
-# My Open Source contributions
+<h1 class="index-section-title">Technical blog posts</h1>
+
+Articles I've written as results of my work, research, or random experiments. Mainly in format as "capsules" for my self-reference that I might need in the future and want to share with the community, do not expect fancy advanced tech writing, but lots of raw ideas.
+
+<ul class="post-list">
+  {%- for post in site.posts -%}
+  {% if post.category == "software" %}
+  <li>
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    <span class="post-meta">{{ post.date | date: date_format }}</span>
+    <a class="post-link" href="{{ post.url | relative_url }}">
+      {{ post.title | escape }}
+    </a>
+  </li>
+  {% endif %}
+  {%- endfor -%}
+</ul>
+
+<hr>
+
+<h1 class="index-section-title">My Open Source contributions</h1>
 
 - **Python 3.8:** [bpo-34160: Update news entry for XML order attributes.](https://github.com/python/cpython/pull/12335){:target="_blank"}
 - **Python 3.8:** [bpo-34160: Preserves order of minidom of Element attributes.](https://github.com/python/cpython/pull/10219){:target="_blank"}
@@ -34,7 +55,9 @@ In this site I share my interests in:
 
 <hr>
 
-# My hobby projects
+<h1 class="index-section-title">My hobby projects</h1>
+
+Projects that I work from time to time for fun.
 
 <div class="container-fluid">
   <div class="row">
