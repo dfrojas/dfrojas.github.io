@@ -77,7 +77,6 @@ Projects that I work from time to time for fun.
         </div>
       </div>
     </div>
-
     <!-- Second Column -->
     <div class="col-md-6 mb-4">
       <div class="card">
@@ -95,7 +94,6 @@ Projects that I work from time to time for fun.
       </div>
     </div>
   </div>
-
   <!-- New Row -->
   <div class="row">
     <!-- First Column -->

@@ -1,7 +1,7 @@
 const abstractFonts = [
   "Ribeye Marrow", "Miniver",
   'Graffiti', 'Bleeding Cowboys', 'Creepster', 'Eater', 'Freckle Face',
-  'Frijole', 'Nosifer', 'Butcherman', 'Finger Paint', 'Hanalei'
+  'Frijole', 'Nosifer', 'Butcherman', 'Finger Paint', 'Hanalei', 'Silkscreen'
 ];
 
 function getRandomFont() {
