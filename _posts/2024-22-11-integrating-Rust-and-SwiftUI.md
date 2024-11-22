@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Integrating of Rust and SwiftUI (Inspired by Mitchell Hashimoto)"
+title: "Integrating Rust and SwiftUI (Inspired by Mitchell Hashimoto)"
 date: 2024-11-22 -0500
 tags: software rust swiftui
 category: software
@@ -10,34 +10,32 @@ image: /assets/img/rust_swiftui.png
 author: Diego Fernando Rojas
 ---
 
-Inspired by [Mitchell Hashimoto](https://twitter.com/mitchellh){:target="_blank"} in his [flight plan library written in Zig](https://github.com/mitchellh/libflightplan){:target="_blank"}, I created a [diving plan library in Rust](https://github.com/dfrojas/openwater){:target="_blank"}. And again, following his work in [Ghostty](https://twitter.com/mitchellh/status/1662217955424493570){:target="_blank"} and his article about [how he created the native Mac App for Ghostty](https://mitchellh.com/writing/zig-and-swiftui){:target="_blank"}, I decided to explore the same approach in my diving plan library and create a native macOS app, having the Rust code library as its backend and SwiftUI. in this article, I'll explain how I did it:
+Inspired by [Mitchell Hashimoto](https://twitter.com/mitchellh){:target="_blank"} in his [flight plan library written in Zig](https://github.com/mitchellh/libflightplan){:target="_blank"}, I created a [diving plan library in Rust](https://github.com/dfrojas/openwater){:target="_blank"}. And again, following his work in [Ghostty](https://twitter.com/mitchellh/status/1662217955424493570){:target="_blank"} and his article about [how he created the native Mac App for Ghostty](https://mitchellh.com/writing/zig-and-swiftui){:target="_blank"}, I decided to explore the same approach in my diving plan library and following his article on how he created a native macOS app, but having the Rust code library as its backend instead of Zig. in this article, I'll explain how I did it:
 
-
-
-The Mitchell's article has already a very good explanation of the approach, so I recommend reading it first. While his article is centered in Zig, the approach in this article is the same but for Rust. The high level idea is the same but the details are not, since the C-ABI and the build system are different.
+Mitchell's article already explains the approach well, so I recommend reading it first. While his article is about Zig, the approach in this article is the same but for Rust. The high-level idea is the same, but the details differ since the C-ABI and the build system differ.
 
 In this post, I'll walk you through how I built a native macOS application that leverages the power of Swift for the GUI and Rust for the backend processing. This architecture combines Swift's excellent UI capabilities with Rust's performance and safety guarantees.
 
 The project consists of two main components:
-* A GUI layer written in Swift using SwiftUI
+* A GUI layer is written in Swift using SwiftUI
 * A backend library written in Rust with FFI bindings
 
-Most the articles that I found while investigating this, were not using Swift Package Manager but Xcode, which it is completely different, and to be honest... Xcode is not great. It adds a lot of complexity, it has not the best developer experience (talking for myself, I'm not familiarized with the Apple dev ecosystem) and is hard to track all the configuration through code. So, I did not want to depends on Xcode.
+While investigating this, most of the articles I found did not use Swift Package Manager but Xcode, which is entirely different, and from my perspective, Xcode could be better. It adds a lot of complexity, it could have a better developer experience (talking for myself, I'm not familiar with the Apple dev ecosystem), and it is hard to track all the configuration through code. So, I did not want to depend on Xcode.
 
-The approach posted in this article is the result of hours of Googling, Claude and trial and error. Before to start, a few notes:
+The approach posted in this article is the result of hours of Googling, asking Claude, and trial and error. Before starting, a few notes:
 
 <div class="alert alert-warning" role="alert" markdown="1">
 
 I'm not using the Open Water library here. I'm just testing the connection between Swift and Rust.
 
-<p>* I'm not an expert in Rust, Swift nor Apple ecosystem, the approach exposed here was the way that I found to have a functional app, for sure there are better ways to do it, if you have any idea, please let me know or feel free to open a pull request to Open Water.</p>
+<p>* I'm not an expert in Rust, Swift, or the Apple ecosystem; the approach exposed here was the way that I found to have a functional app. Sure, there are better ways to do it; if you have any idea, please let me know or feel free to open a pull request to Open Water.</p>
 <p>* I'm using Swift Package Manager. I'm not creating the project using Xcode, which would change the structure a lot.</p>
-<p>* For the article, I'm exposing a single function to keep it simple. In future articles, I'll add more complex data structures.</p>
-<p>* I'm using Brew as its system library. This open a lot of questions that still I'm exploring.</p>
-<p>* Is the pkg approach the best way to link the Rust library? I don't know, I'm exploring it.</p>
-<p>* This is not a copy-pasting approach, I'm explaining the steps that I followed for Open Water, but for your project might be different. The intention is to give you a starting point.</p>
-<p>* In the Mitchell's article he exposes a lot of details that I'm not covering here nor I did not for Open Water. For example the usage of Lipo for Universal (Multi-Arch) Library or advance window management.</p>
-<p>* I'm still not sure if using an static or dynamic library is the best approach.</p>
+<p>* I'm exposing a single function to keep it simple for the article. In future articles, I'll add more complex data structures.</p>
+<p>* I'm using Brew as its system library. This opens up a lot of questions that I'm still exploring.</p>
+<p>* Is the pkg approach the best way to link the Rust library? I don't know; I'm exploring it.</p>
+<p>* This is not a copy-pasting approach; I'm explaining the steps I followed for Open Water, but your project might differ. The intention is to give you a starting point.</p>
+<p>* In Mitchell's article, he exposes many details that I'm not covering here, nor did I do for Open Water. For example, the usage of Lipo for Universal (Multi-Arch) Library or advanced window management.</p>
+<p>* I still need to determine if a static or dynamic library is best.</p>
 </div>
 
 Ok, let's work!
@@ -81,7 +79,7 @@ The above commands should create a boilerplate. My project structure in [Open Wa
 ```
 
 ### Cargo.toml
-For this project, I'm using a dynamic library. I'm not pasting the entire Cargo file of Open Water because I have different binaries defined there that are not relevant for this article. 
+For this project, I'm using a dynamic library. I'm not pasting the entire Cargo file of Open Water because I have different binaries defined there that are not relevant to this article. 
 
 <figure>
   <figcaption>File: lib/Cargo.toml</figcaption>
@@ -277,7 +275,7 @@ let package = Package(
 
 ### pkg-config file: Linking Everything Together
 
-The pkg-config configuration file plays a crucial role. It tells the build system how to find and link our Rust library. This file works in conjunction with our Package.swift configuration (specifically with the systemLibrary target), especificalle in this line: https://github.com/dfrojas/openwater/blob/7861ab81e2b947c34ca1ee2a9612c3b960cd4b0b/src/gui/Package.swift#L24
+The pkg-config configuration file plays a crucial role. It tells the build system how to find and link our Rust library. This file works in conjunction with our Package.swift configuration (specifically with the systemLibrary target), specifically in [this line]( https://github.com/dfrojas/openwater/blob/7861ab81e2b947c34ca1ee2a9612c3b960cd4b0b/src/gui/Package.swift#L24){:target="_blank"}.
 <figure>
   <figcaption>File: gui/openwater.pc</figcaption>
 {% highlight bash %}
@@ -331,7 +329,7 @@ run-app: ## Compile and run the GUI
 
 ### Finally...
 
-Open Water is not intended to be a full dive log, it's just my hobby project to learn Rust and systems performance. So, for now, I'm very happy with the results of integrating Rust with a native macOS app. Still I have a lot of questions about the best practices for this approach. In the future, I'd like to explore:
+Open Water is not intended to be a full dive log, it's just my hobby project to learn Rust and systems performance. So, for now, I'm happy with the results of integrating Rust with a native macOS app. Still, I have many questions about the best practices for this approach. In the future, I'd like to explore:
 
 * Expose more complex data structures sending real [UDDF logs](https://wrobell.dcmod.org/uddf/){:target="_blank"} information from Rust to Swift and render graphics as air consumption and maps.
 * Windows isolation using cgroups to learn how to share the CPU and memory between processes.
