@@ -13,12 +13,16 @@ layout: default
               {{ page.date | date: date_format }}
             </time>
             {%- if page.author -%}
-              • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+            by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
             {%- endif -%}
           </p>
         </header>
 
         <div class="post-content">
+          {% if page.image %}
+            <img src="{{ page.image }}" alt="{{ page.title }}" class="img-fluid">
+          {% endif %}
+          <br><br>
           {{ content }}
         </div>
       </article>

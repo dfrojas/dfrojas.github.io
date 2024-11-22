@@ -1,14 +1,18 @@
 ---
 layout: post
-title: "Integrating of Rust and SwiftUI."
+title: "Integrating of Rust and SwiftUI (Inspired by Mitchell Hashimoto)"
 date: 2024-11-22 -0500
 tags: software rust swiftui
 category: software
 published: true
 emoji: 👨‍💻
+image: /assets/img/rust_swiftui.png
+author: Diego Fernando Rojas
 ---
 
 Inspired by [Mitchell Hashimoto](https://twitter.com/mitchellh){:target="_blank"} in his [flight plan library written in Zig](https://github.com/mitchellh/libflightplan){:target="_blank"}, I created a [diving plan library in Rust](https://github.com/dfrojas/openwater){:target="_blank"}. And again, following his work in [Ghostty](https://twitter.com/mitchellh/status/1662217955424493570){:target="_blank"} and his article about [how he created the native Mac App for Ghostty](https://mitchellh.com/writing/zig-and-swiftui){:target="_blank"}, I decided to explore the same approach in my diving plan library and create a native macOS app, having the Rust code library as its backend and SwiftUI. in this article, I'll explain how I did it:
+
+
 
 The Mitchell's article has already a very good explanation of the approach, so I recommend reading it first. While his article is centered in Zig, the approach in this article is the same but for Rust. The high level idea is the same but the details are not, since the C-ABI and the build system are different.
 
