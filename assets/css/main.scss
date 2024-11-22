@@ -16,14 +16,10 @@ body {
   background-color: white;
 }
 
-a {
-  color: #333333;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #333333;
-}
+// a {
+//   color: #169fe6 !important;
+//   //16a34a !important;
+// }
 
 .home-paragraph {
     font-size: 18px;
@@ -76,6 +72,7 @@ a:visited {
 .post-link {
   font-size: 1.5rem;
   color: #333333 !important;
+  text-decoration: none;
 }
 
 .index-section-title {
