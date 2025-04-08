@@ -3,6 +3,8 @@ layout: post
 title:  "Creating Kafka Topics Asynchronously with aiokafka in Python: A Practical Guide"
 date:   2025-04-07 13:42:26 -0500
 category: software
+image: /assets/img/kafka-async-python.jpg
+description: "Discover how to create Kafka topics using pure async Python with aiokafka. Learn the correct way to initialize the admin client and avoid common pitfalls with async Kafka operations."
 published: true
 ---
 

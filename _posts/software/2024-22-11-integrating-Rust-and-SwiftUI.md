@@ -8,6 +8,7 @@ published: true
 emoji: 👨‍💻
 image: /assets/img/rust_swiftui.png
 author: Diego Fernando Rojas
+description: "Learn how to build native macOS apps combining Rust's performance with SwiftUI's elegance. A step-by-step guide to creating FFI bindings, setting up the build system, and building a modern app without Xcode."
 ---
 
 Inspired by [Mitchell Hashimoto](https://twitter.com/mitchellh){:target="_blank"} in his [flight plan library written in Zig](https://github.com/mitchellh/libflightplan){:target="_blank"}, I created a [diving plan library in Rust](https://github.com/dfrojas/openwater){:target="_blank"}. And again, following his work in [Ghostty](https://twitter.com/mitchellh/status/1662217955424493570){:target="_blank"} and his article about [how he created the native Mac App for Ghostty](https://mitchellh.com/writing/zig-and-swiftui){:target="_blank"}, I decided to explore the same approach in my diving plan library and following his article on how he created a native macOS app, but having the Rust code library as its backend instead of Zig. in this article, I'll explain how I did it:
