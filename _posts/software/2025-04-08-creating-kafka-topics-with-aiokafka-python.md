@@ -3,11 +3,11 @@ layout: post
 title:  "Creating Kafka Topics Asynchronously with aiokafka in Python: A Practical Guide"
 date:   2025-04-07 13:42:26 -0500
 category: software
-image: /assets/img/kafka-async-python.jpg
+image: /assets/img/kafka-async-python.jpg?v=2
+image_twitter: /assets/img/kafka-async-python-twitter.png?new=true
 description: "Discover how to create Kafka topics using pure async Python with aiokafka. Learn the correct way to initialize the admin client and avoid common pitfalls with async Kafka operations."
 published: true
 ---
-
 # Introduction
 
 In this article, I'll share a pure asynchronous approach to creating Kafka topics using [aiokafka](https://github.com/aio-libs/aiokafka){:target="_blank"}. This solution is particularly valuable for applications that already use aiokafka for other operations and want to maintain a consistent asynchronous programming model without introducing additional dependencies. While not groundbreaking, this clean approach might save future-me (and perhaps you) some time searching for solutions.
