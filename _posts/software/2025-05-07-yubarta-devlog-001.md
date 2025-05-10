@@ -4,7 +4,7 @@ title: "[Yubarta devlog #001] What I'm building and why"
 date: 2025-05-07 -0500
 tags: yubarta automation
 category: software
-published: false
+published: true
 emoji: 👨‍💻
 ---
 
