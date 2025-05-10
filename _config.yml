@@ -32,6 +32,11 @@ google_analytics: G-K0VY1W90KD
 plugins:
   - jekyll-sitemap
 
+collections:
+  dives:
+    output: true
+    permalink: /dives/:name/
+
 # Build settings
 theme: minima
 
@@ -46,7 +51,7 @@ sass:
   load_paths:
     - assets/_sass
   style: compressed
-  
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

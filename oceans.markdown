@@ -11,65 +11,33 @@ order: 2
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <div class="container-fluid">
-    <div class="row m-auto justify-content-center align-items-center">
-        <div class="col-md-2">
-            <img src="/assets/img/oceans/presentation.jpg" class="img-fluid img-thumbnail me-diving">
-        </div>
-        <div class="col-md-5">
-            <p class="dive-map-subtitle">
-                My mission is to travel the world spreading the message of ocean conservation and sustainability.
-                Mainly about seafood consumption and its impact on our oceans.
-            </p>
-        </div>
-    </div>
-    <h1 class="dive-map-title text-center"><strong>My Diving Expeditions</strong></h1>
+    <h2 class="dive-map-title text-center"><strong>My Diving Expeditions</strong></h2>
+    <span class="intro">
+    <p>Welcome to my other part of my life: <strong>Oceans!</strong></p>
+    <p>Diving is more than a hobby. it's my way of connecting with the ocean and contributing to its protection.
+    Through scuba and freediving, I explore and document the beauty and fragility of marine life. This gallery is my small attempt to share those moments and spark conversations about ocean conservation.</p>
+    <p>I'm still curating the stories behind each photo, documenting past dives and and finding ways to raise awareness about ocean conservation through storytelling. <a href="https://x.com/dfrojas89" target="_blank">Follow me on Twitter</a> to stay updated.</p>
+    </span>
     <div id="diveMap"></div>
 </div>
-
-<div class="container-fluid seafood-consumption-section">
-    <h2 class="text-center mb-4">
-        The impact of your seafood consumption on our Oceans
-    </h2>
-    <p class="text-center lead">
-        Our seafood choices have a profound impact on the health of our oceans. By making informed decisions, we can help protect marine ecosystems and ensure sustainable fish populations for future generations.
-    </p>
-</div>
-
-<div class="ocean-hero-container">
-  <div class="ocean-hero">
-    <video autoplay loop muted playsinline id="bgVideo1">
-      <source src="/assets/video/oceans/GH017503-4k.mp4" type="video/mp4">
-    </video>
-    <div class="hero-content">
-      <h1>Dive Into a World of Wonder and Urgency</h1>
-      <p>Our oceans are the lifeblood of Earth, covering 71% of our planet's surface and holding 97% of its water. They are not just vast bodies of blue – they are the cradle of life, the regulator of our climate, and the frontier of human exploration.</p>
-    </div>
-  </div>
-</div>
-
-<script>
-  document.getElementById('bgVideo1').playbackRate = 0.7;
-</script>
 
 <!-- Expeditions Modal -->
 <div class="modal fade" id="diveModal" tabindex="-1" role="dialog" aria-labelledby="diveModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="diveTitle"></h5>
+        <h5 id="diveTitle"></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <div class="dive-info-container">
           <div class="dive-image-container">
-            <img id="diveImage" src="" alt="Dive location" class="img-fluid">
+            <img id="diveImage" src="" class="img-fluid" width="100%">
           </div>
           <div class="dive-text-container">
             <p id="diveDescription"></p>
           </div>
-        </div>
       </div>
     </div>
   </div>
@@ -77,79 +45,26 @@ order: 2
 
 <script>
   var diveInfo = {
-    nassau: {
-      title: "Nassau, Bahamas",
-      description: "Explored vibrant coral reefs teeming with tropical fish.",
-      image: "/assets/images/dives/nassau.jpg",
-      coords: [25.0479, -77.3554]
-    },
-    guadeloupe: {
-      title: "La Ventana, Mexico",
-      description: "Encountered majestic sea turtles in crystal clear waters.",
-      image: "/assets/images/dives/guadeloupe.jpg",
-      coords: [24.048940250475003, -109.9863539559161]
-    },
-    providencia: {
-      title: "Providencia, Colombia",
-      description: "Discovered hidden underwater caves and colorful marine life.Discovered hidden underwater caves and colorful marine life.Discovered hidden underwater caves and colorful marine life.Discovered hidden underwater caves and colorful marine life.Discovered hidden underwater caves and colorful marine life.Discovered hidden underwater caves and colorful marine life.",
-      image: "/assets/img/oceans/GOPR7355.jpg",
-      coords: [13.3486, -81.3739]
-    },
-    greatBarrierReef: {
-      title: "Santa Marta, Colombia",
-      description: "Witnessed the breathtaking beauty of the world's largest coral reef system.",
-      image: "/assets/images/dives/great-barrier-reef.jpg",
-      coords: [11.277925092250461, -74.22311806599735]
-    },
-    dahab: {
-      title: "Dahab, Egypt",
-      description: "Witnessed the breathtaking beauty of the world's largest coral reef system.",
-      image: "/assets/img/oceans/GOPR7502-1.jpg",
-      coords: [28.511427650376998, 34.52234963152]
-    },
-    cozumel: {
-      title: "Cozumel, Mexico",
-      description: "Explored vibrant coral reefs teeming with tropical fish.",
-      image: "/assets/images/dives/cozumel.jpg",
-      coords: [20.373403717729452, -86.6804092097252]
-    },
-    // bahiaMagdalena: {
-    //   title: "Bahia Magdalena, Mexico",
-    //   description: "Explored vibrant coral reefs teeming with tropical fish.",
-    //   image: "/assets/images/dives/bahia-magdalena.jpg",
-    //   coords: [24.58407372983137, -111.99901301210497]
-    // },
-    dosOjos: {
-      title: "Quintana Roo, Mexico",
-      description: "Explored vibrant coral reefs teeming with tropical fish.",
-      image: "/assets/images/dives/dos-ojos.jpg",
-      coords: [20.32654763783647, -87.39165356123944]
-    },
-    costaBrava: {
-      title: "Costa Brava, Spain",
-      description: "Explored vibrant coral reefs teeming with tropical fish.",
-      image: "/assets/images/dives/costa-brava.jpg",
-      coords: [42.463967817285194, 3.420987546114818]
-    },
-    gorgona: {
-      title: "Gorgona, Colombia",
-      description: "Explored vibrant coral reefs teeming with tropical fish.",
-      image: "/assets/img/oceans/GOPR7387.jpg",
-      coords: [2.970218942284847, -78.19628910413127]
-    }
+    {% assign dives = site.dives %}
+    {% for dive in dives %}
+      {{ dive.name | jsonify }}: {
+        title: {{ dive.title | jsonify }},
+        description: {{ dive.description | jsonify }},
+        image: {{ dive.image | jsonify }},
+        coords: {{ dive.coordinates | jsonify }}
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
   };
 
   function initMap() {
     var map = L.map('diveMap', {
       center: [20, 0],
-      zoom: window.innerWidth < 768 ? 0 : 2, // Adjust zoom based on screen width
-      minZoom: window.innerWidth < 768 ? 0 : 2,
-      maxZoom: window.innerWidth < 768 ? 0 : 2,
-      zoomControl: false,
-      dragging: false,
+      zoom: 2.5, // Adjust zoom based on screen width
+      zoomControl: true,
+      dragging: true,
       doubleClickZoom: false,
-      scrollWheelZoom: false,
-      touchZoom: false,
+      scrollWheelZoom: true,
+      touchZoom: true,
     });
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -168,11 +83,14 @@ order: 2
 
     for (var key in diveInfo) {
       var dive = diveInfo[key];
-      L.marker(dive.coords, {icon: circleIcon})
+      L.marker(dive.coords, {icon: circleIcon}, )
         .addTo(map)
-        .bindPopup(dive.title)
+        .bindTooltip(dive.title,{
+          permanent: false,
+          direction: 'top',
+        })
         .on('click', function(e) {
-          showDiveInfo(this.getPopup().getContent());
+          showDiveInfo(this.getTooltip().getContent());
         });
     }
   }
@@ -186,8 +104,8 @@ order: 2
   function showDiveInfo(title) {
     var dive = Object.values(diveInfo).find(d => d.title === title);
     document.getElementById('diveTitle').textContent = dive.title;
-    document.getElementById('diveDescription').textContent = dive.description;
     document.getElementById('diveImage').src = dive.image;
+    document.getElementById('diveDescription').textContent = dive.description;
     $('#diveModal').modal('show');
   }
 </script>

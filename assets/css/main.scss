@@ -21,6 +21,22 @@ body {
 //   //16a34a !important;
 // }
 
+.presentation {
+  line-height: 1.8;
+  font-size: 1.5rem !important;
+  margin-bottom: 1.5rem;
+}
+
+.sub-presentation {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
 .home-paragraph {
     font-size: 18px;
 }
@@ -69,13 +85,14 @@ body {
   border-top-color: #000000;
 }
 
-.post-link {
-  font-size: 1.5rem;
+.list-index-posts {
   color: #333333 !important;
   text-decoration: none;
 }
 
 .index-section-title {
+  color: #169fe6;
+  font-weight: bolder;
   margin-bottom: 1.5rem;
 }
 
@@ -137,7 +154,6 @@ hr {
   margin-top: 30px;
 }
 
-.post-content h3 {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.svg-icon {
+  width: 22px !important;
 }

@@ -1,14 +1,11 @@
 ---
 layout: post
-title:  "Creating Kafka Topics Asynchronously with aiokafka in Python: A Practical Guide"
+title:  "Creating Kafka Topics Asynchronously with aiokafka in Python"
 date:   2025-04-07 13:42:26 -0500
 category: software
-image: /assets/img/kafka-async-python.jpg?v=2
 image_twitter: /assets/img/kafka-async-python-twitter.png?new=true
-description: "Discover how to create Kafka topics using pure async Python with aiokafka. Learn the correct way to initialize the admin client and avoid common pitfalls with async Kafka operations."
 published: true
 ---
-# Introduction
 
 In this article, I'll share a pure asynchronous approach to creating Kafka topics using [aiokafka](https://github.com/aio-libs/aiokafka){:target="_blank"}. This solution is particularly valuable for applications that already use aiokafka for other operations and want to maintain a consistent asynchronous programming model without introducing additional dependencies. While not groundbreaking, this clean approach might save future-me (and perhaps you) some time searching for solutions.
 
@@ -20,7 +17,7 @@ After some investigation, I discovered a more elegant solution: creating Kafka t
 
 <div style="margin-top: 40px;"></div>
 
-# Common Approach
+## Common Approach
 
 If you follow the same approach as the synchronous library, you'd have something like this:
 
@@ -42,7 +39,7 @@ However, you'll encounter an `IncompatibleBrokerVersion` error:
 
 <div style="margin-top: 40px;"></div>
 
-# Why This Happens and the Solution
+## Why This Happens and the Solution
 
 This approach doesn't work with the asynchronous library because the synchronous library (kafka-python) assigns the [Kafka API version when the class is instantiated](https://github.com/dpkp/kafka-python/blob/3962d67bf8fc83d7e0a48ae9215563093cbe74a3/kafka/admin/client.py#L222-L223){:target="_blank"}.
 
@@ -99,7 +96,7 @@ if __name__ == "__main__":
 
 <div style="margin-top: 40px;"></div>
 
-# Conclusion
+## Conclusion
 
 In this article, we've explored how to create Kafka topics programmatically using aiokafka's asynchronous API. The key insight was understanding that we need to explicitly call the `start()` method on the `AIOKafkaAdminClient` to properly initialize the Kafka API version before creating topics.
 

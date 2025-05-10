@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /about/
 order: 0
+published: false
 ---
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>

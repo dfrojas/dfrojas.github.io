@@ -12,10 +12,10 @@ Imagine this: you are working on a project but must store sensitive information.
 
 This case never happened to me, but it is a possible scenario if you expose your sensitive information in your Version Control System. It does not matter what kind of sensitive information you have (API Keys, M2M keys, passwords, etc.); you should (or have?) exclude them from your VCS and securely handle them. In this article, I'm going to publish my approach and the tools that I use:
 
-### The perfect combination (for me):
+## The perfect combination (for me):
 [SOPS](https://github.com/getsops/sops){:target="_blank"}  + [age](https://github.com/FiloSottile/age){:target="_blank"} 
 
-### Glossary:
+## Glossary:
 **VCS:** Version Control System.
 
 I'm not going to explain in detail what SOPS and age are; you can check its documentation. But briefly:
@@ -25,15 +25,15 @@ I'm not going to explain in detail what SOPS and age are; you can check its docu
 
 {% include alerts/info.html content="SOPS also supports AWS KMS, GCP KMS, or Azure Key Vault. However, I chose age because I do not want to deal with more services from cloud providers. Age is pretty simple, secure, and easy." %}
 
-# Ok, too much talk... Let's work!
+# Ok, too much talk, let's work...
 
-#### 1. Install SOPS and age
+## 1. Install SOPS and age
 
 (I'm assuming you are on Mac, but if you are on Windows or Linux, use your OS's package manager.)
 
 `brew install sops age`
 
-#### 2. Generate the key with age
+## 2. Generate the key with age
 
 `age-keygen -o key.txt`
 
@@ -47,7 +47,7 @@ AGE-SECRET-KEY-[a-secret-key-generated-by-age]
 
 {% include alerts/warning.html content="Remember to exclude the key.txt file of your VCS. If you push it, all this will be in vain" %}
 
-#### 2. Configure a .sops file
+## 3. Configure a .sops file
 Although we can pass all the configurations we will write in this file through the CLI, it is tedious and not versionable. That's why SOPS can handle all its configuration with a .sops file. Mine looks like this:
 
 <figure>
@@ -67,7 +67,7 @@ Where:
 
 It is safe to push this file to your VCS.
 
-#### 3. Encrypting a file
+## 4. Encrypting a file
 SOPS supports JSON, YAML, and binaries, among other formats, as inputs for your sensitive data. I choose YAML. My file that contains the sensitive information looks like this:
 
 <figure>
@@ -113,7 +113,7 @@ sops:
 {% endhighlight %}
 
 
-#### 4. Decrypting a file
+## 5. Decrypting a file
 
 SOPS needs to know the path where you have stored your **private key** generated in step #1 with age. SOPS will look for this file with the path in the environment variable `SOPS_AGE_KEY_FILE`.
 
@@ -130,6 +130,6 @@ ssh_secret_key: rodriguez
 a_password: my_password_xyz
 ```
 
-# To take into account
+## To take into account
 
 SOPS and age have more configuration options like key_groups to handle multiple key management tools. You can check all its configuration and options in its official documentation. This article refers to my own recipe. Use it or modify it according to your needs.

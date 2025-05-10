@@ -21,9 +21,7 @@ My Open Water application has the following binaries:
 
 Each of them has its own entrypoint and they are completely independent.
 
-
-
-# Configuration
+## Configuration
 
 Create a new file in the `.vscode` directory called `launch.json`.
 

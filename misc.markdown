@@ -3,6 +3,7 @@ layout: page
 title: Notes
 permalink: /notes/
 order: 3
+published: false
 ---
 
 <div markdown="1">
