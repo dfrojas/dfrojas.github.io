@@ -16,7 +16,8 @@ order: 2
     <p>Welcome to my other part of my life: <strong>Oceans!</strong></p>
     <p>Diving is more than a hobby. it's my way of connecting with the ocean and contributing to its protection.
     Through scuba and freediving, I explore and document the beauty and fragility of marine life. This gallery is my small attempt to share those moments and spark conversations about ocean conservation.</p>
-    <p>I'm still curating the stories behind each photo, documenting past dives and and finding ways to raise awareness about ocean conservation through storytelling. <a href="https://x.com/dfrojas89" target="_blank">Follow me on Twitter</a> to stay updated.</p>
+    <p>I'm still curating the stories behind each photo, documenting past dives and finding ways to raise awareness about ocean conservation through storytelling.</p>
+    <p><a href="https://x.com/dfrojas89" target="_blank">Follow me on Twitter</a> to stay updated.</p>
     </span>
     <div id="diveMap"></div>
 </div>

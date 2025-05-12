@@ -1,19 +1,19 @@
 ---
 ---
-$content-width: 80%;
+
+$content-width: 95%;
 
 @import "minima";
 @import "custom-bootstrap";
 
-
 body {
-  font-family: "Roboto", serif;
-  font-weight: $base-font-weight;
-  font-size: #{$base-font-size};
-  line-height: #{$base-line-height};
-  color: #333333;
-  line-height: 1.5;
-  background-color: white;
+    font-family: "Roboto", serif;
+    font-weight: $base-font-weight;
+    font-size: #{$base-font-size};
+    line-height: #{$base-line-height};
+    color: #333333;
+    line-height: 1.5;
+    background-color: white;
 }
 
 // a {
@@ -22,19 +22,19 @@ body {
 // }
 
 .presentation {
-  line-height: 1.8;
-  font-size: 1.5rem !important;
-  margin-bottom: 1.5rem;
+    line-height: 1.8;
+    font-size: 1.5rem !important;
+    margin-bottom: 1.5rem;
 }
 
 .sub-presentation {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
 }
 
 p {
-  font-size: 1.1rem;
+    font-size: 1.1rem;
 }
 
 .home-paragraph {
@@ -42,106 +42,106 @@ p {
 }
 
 .project-card-img {
-  width: 100%;
-  object-fit: contain;
-  aspect-ratio: 1 / 1;
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 1 / 1;
 }
 
 .logo-face {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: block;
 }
 
 .site-nav {
-  float: none;
-  text-align: center;
-  line-height: 0;
-  margin-bottom: 20px;
-  margin-top: 20px;
+    float: none;
+    text-align: center;
+    line-height: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .site-header {
-  border-top: 0.5rem solid #169fe6; // Default color for Home
-  display: flex;
-  justify-content: center;
-  width: 100%;
+    border-top: 0.5rem solid #169fe6; // Default color for Home
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .site-header-oceans {
-  border-top-color: #169fe6;
+    border-top-color: #169fe6;
 }
 
 .site-header-notes {
-  border-top-color: #cbb35c;
+    border-top-color: #cbb35c;
 }
 
 .site-header-music {
-  border-top-color: #000000;
+    border-top-color: #000000;
 }
 
 .list-index-posts {
-  color: #333333 !important;
-  text-decoration: none;
+    color: #333333 !important;
+    text-decoration: none;
 }
 
 .index-section-title {
-  color: #169fe6;
-  font-weight: bolder;
-  margin-bottom: 1.5rem;
+    color: #169fe6;
+    font-weight: bolder;
+    margin-bottom: 1.5rem;
 }
 
 .copyright {
-  font-size: 14px;
-  font-weight: bolder !important;
-  color: #666666;
+    font-size: 14px;
+    font-weight: bolder !important;
+    color: #666666;
 }
 
 .post-title-list {
-  margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 .excerpt {
-  font-size: 16px;
-  color: #666666;
-  text-align: justify;
+    font-size: 16px;
+    color: #666666;
+    text-align: justify;
 }
 
 .label {
-  color: white;
-  border-radius: 5px;
-  padding: 4px;
-  background-color: gold;
-  font-size: 12px;
-  margin-right: 3px;
+    color: white;
+    border-radius: 5px;
+    padding: 4px;
+    background-color: gold;
+    font-size: 12px;
+    margin-right: 3px;
 }
 
 @font-face {
-  font-family: "roboto";
-  src: url("../../assets/fonts/Roboto-Light.ttf");
+    font-family: "roboto";
+    src: url("../../assets/fonts/Roboto-Light.ttf");
 }
 
 @font-face {
-  font-family: "roboto-bold";
-  src: url("../../assets/fonts/Roboto-Bold.ttf");
+    font-family: "roboto-bold";
+    src: url("../../assets/fonts/Roboto-Bold.ttf");
 }
 
 @font-face {
-  font-family: "roboto-italic";
-  src: url("../../assets/fonts/Roboto-Italic.ttf");
+    font-family: "roboto-italic";
+    src: url("../../assets/fonts/Roboto-Italic.ttf");
 }
 
 strong {
-  font-family: "roboto-bold";
+    font-family: "roboto-bold";
 }
 
 em {
-  font-family: "roboto-italic";
+    font-family: "roboto-italic";
 }
 
 .result li.active a {
@@ -150,10 +150,10 @@ em {
 }
 
 hr {
-  margin-bottom: 20px;
-  margin-top: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 .svg-icon {
-  width: 22px !important;
+    width: 22px !important;
 }
