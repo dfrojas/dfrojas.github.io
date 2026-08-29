@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Why I Stopped Using OpenSpec"
+title:  "Why I Stopped Using Spec-Driven Development"
 date:   2026-08-29 -0500
 category: software
 published: true
