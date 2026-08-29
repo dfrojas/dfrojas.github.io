@@ -42,6 +42,9 @@ layout: home
 
 <h2 class="index-section-title">My Open Source Contributions</h2>
 
+<p><strong>Langfuse:</strong> <a class="list-index-posts" href="https://github.com/langfuse/langfuse-docs/issues/2718" target="_blank">Documented Claude Code hook script reports estimated token counts instead of real API usage</a></p>
+
+
 <p><strong>Python 3.8:</strong> <a class="list-index-posts" href="https://github.com/python/cpython/pull/12335" target="_blank">bpo-34160: Update news entry for XML order attributes</a></p>
 
 <p><strong>Python 3.8:</strong> <a class="list-index-posts" href="https://github.com/python/cpython/pull/10219" target="_blank">bpo-34160: Preserves order of minidom of Element attributes</a></p>
