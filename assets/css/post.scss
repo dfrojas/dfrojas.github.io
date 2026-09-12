@@ -34,6 +34,16 @@
   line-height: 1.8;
 }
 
+.post-fancy-image {
+  padding: 8px;
+  border: 3px solid transparent;
+  border-radius: 16px;
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(135deg, #169fe6, #7c4dff) border-box;
+  box-shadow: 0 10px 30px rgba(22, 159, 230, 0.25);
+}
+
 .post-sidebar {
   padding-left: 2rem;
   border-left: 1px solid #e8e8e8;
