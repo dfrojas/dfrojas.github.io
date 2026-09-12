@@ -7,7 +7,7 @@ layout: home
 <img src="/assets/img/me-zeus.jpeg" class="img-fluid rounded-circle img-thumbnail" width="180px">
 
 <div class="presentation">
-<h3>Hi, I’m Diego — a software engineer, diver, and aspiring electronic music producer/DJ.</h3>
+<h3>Hi, I’m Diego, a software engineer and diver.</h3>
 <h3>I'm from Colombia 🇨🇴 living in Berlin 🇩🇪.</h3>
 </div>
 
