@@ -8,7 +8,7 @@ layout: home
 
 <div class="presentation">
 <h3>Hi, I’m Diego, a software engineer and diver.</h3>
-<h3>I'm from Colombia 🇨🇴 living in Berlin 🇩🇪.</h3>
+<h3>I'm from Colombia 🇨🇴 living in Barcelona 🇪🇸.</h3>
 </div>
 
 <p class="sub-presentation">I currently work as a contractor Software Engineer at Goodyear.</p>
