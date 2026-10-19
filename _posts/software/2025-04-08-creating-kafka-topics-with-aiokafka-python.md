@@ -3,7 +3,10 @@ layout: post
 title:  "Creating Kafka Topics Asynchronously with aiokafka in Python"
 date:   2025-04-07 13:42:26 -0500
 category: software
-image_twitter: /assets/img/kafka-async-python-twitter.png?new=true
+image:
+  path: /assets/img/kafka-async-python-twitter.png?new=true
+twitter:
+  card: summary_large_image
 published: true
 ---
 

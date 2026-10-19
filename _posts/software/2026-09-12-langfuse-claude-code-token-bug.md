@@ -4,7 +4,10 @@ title: "When Langfuse Reported 156 Tokens for a 16.862-Token Claude Code Request
 date: 2026-09-12 00:00:00 -0500
 tags: software langfuse observability ai
 category: software
-image_twitter: /assets/img/langfuse-claude-bug.png
+image:
+  path: /assets/img/langfuse-claude-bug.png
+twitter:
+  card: summary_large_image
 published: true
 emoji: 👨‍💻
 ---

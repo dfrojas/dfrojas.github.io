@@ -18,6 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+title: "Diego Fernando Rojas"
 email: hello at dfrojas dot com
 author: "Diego Fernando Rojas"
 description: The human side of Software development.
@@ -41,6 +42,14 @@ collections:
 theme: minima
 
 defaults:
+  - scope:
+      path: ""
+    values:
+      # Image objects are social previews; string images also act as post covers.
+      image:
+        path: /assets/img/face.png
+      twitter:
+        card: summary
   - scope:
       path: "assets/img"
     values:
