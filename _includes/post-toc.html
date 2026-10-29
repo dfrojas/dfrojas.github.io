@@ -1,0 +1,11 @@
+{% if page.toc %}
+  {% assign post_toc = content | toc_only %}
+  {% if post_toc contains '<li' %}
+    <nav class="post-toc" aria-labelledby="post-toc-title">
+      <details>
+        <summary class="post-toc-title" id="post-toc-title">Table of contents</summary>
+        {{ post_toc }}
+      </details>
+    </nav>
+  {% endif %}
+{% endif %}

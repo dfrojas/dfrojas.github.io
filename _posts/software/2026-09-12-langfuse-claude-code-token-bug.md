@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "When Langfuse Reported 156 Tokens for a 16.862-Token Claude Code Request"
+title: "How I found a Langfuse bug in the integration with Claude Code"
 date: 2026-09-12 00:00:00 -0500
 tags: software langfuse observability ai
 category: software

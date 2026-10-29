@@ -8,12 +8,13 @@ layout: home
 
 <div class="presentation">
 <h3>Hi, I’m Diego, a software engineer and diver.</h3>
-<h3>I'm from Colombia 🇨🇴 living in Barcelona 🇪🇸.</h3>
+<h3>I'm from Colombia, based in Spain. </h3>
+<h3>Working across Europe  and Latin America.</h3>
 </div>
 
-<p class="sub-presentation">I currently work as a contractor Software Engineer at Goodyear.</p>
+<p class="sub-presentation">I currently work as a Software Engineer contractor in the automative industry.</p>
 
-<p class="sub-presentation">Here I share my tech experiments and projects across eBPF, distributed systems, performance engineering, backend development, compilers, containers and AI. I also document <a href="/oceans" target="_blank">my journey through ocean expeditions and conservation.</a>
+<p class="sub-presentation">Here I share my tech experiments and projects across eBPF, distributed systems, performance engineering, backend development, and AI. I also document <a href="/oceans" target="_blank">my journey through ocean expeditions and conservation.</a>
 </p>
 
 <p class="sub-presentation">You can find me on <a href="https://twitter.com/dfrojas89" target="_blank">Twitter</a>, <a href="https://github.com/dfrojas" target="_blank">GitHub</a> and <a href="https://www.linkedin.com/in/dfrojas/" target="_blank">LinkedIn</a></p>

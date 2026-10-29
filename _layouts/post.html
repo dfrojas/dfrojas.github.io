@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-<div class="post-container">
-  <div class="row justify-content-center">
-    <div class="col-md-10 col-lg-10">
+<div class="post-container{% if page.categories contains 'software' %} post-container--software{% endif %}">
+  <div class="{% if page.categories contains 'software' %}software-post-layout{% else %}row justify-content-center{% endif %}">
+    <div class="{% if page.categories contains 'software' %}software-post-main{% else %}col-md-10 col-lg-10{% endif %}">
       <article class="post">
         <header class="post-header">
           <h1 class="post-title">{{ page.title | escape }}</h1>
@@ -18,13 +18,26 @@ layout: default
           </p>
         </header>
 
+        {% if page.categories contains 'software' %}
+          {% include post-toc.html %}
+        {% endif %}
+
         <div class="post-content">
           {% if page.image and page.image.path == nil %}
             <img src="{{ page.image }}" alt="{{ page.title }}" class="img-fluid">
             <br><br>
           {% endif %}
-          {{ content }}
+          {% if page.categories contains 'software' and page.toc %}
+            {{ content | inject_anchors }}
+          {% else %}
+            {{ content }}
+          {% endif %}
         </div>
+        {% if page.categories contains 'software' %}
+          <div class="software-post-sidebar">
+            {% include post-author.html %}
+          </div>
+        {% endif %}
       </article>
     </div>
   </div>

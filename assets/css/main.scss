@@ -2,12 +2,15 @@
 ---
 
 $content-width: 95%;
+$base-font-family: "Roboto", Arial, sans-serif;
+$font-family-sans-serif: $base-font-family;
 
+@import "fonts";
 @import "minima";
 @import "custom-bootstrap";
 
 body {
-    font-family: "Roboto", serif;
+    font-family: $base-font-family;
     font-weight: $base-font-weight;
     font-size: #{$base-font-size};
     line-height: #{$base-line-height};
@@ -119,29 +122,6 @@ p {
     background-color: gold;
     font-size: 12px;
     margin-right: 3px;
-}
-
-@font-face {
-    font-family: "roboto";
-    src: url("../../assets/fonts/Roboto-Light.ttf");
-}
-
-@font-face {
-    font-family: "roboto-bold";
-    src: url("../../assets/fonts/Roboto-Bold.ttf");
-}
-
-@font-face {
-    font-family: "roboto-italic";
-    src: url("../../assets/fonts/Roboto-Italic.ttf");
-}
-
-strong {
-    font-family: "roboto-bold";
-}
-
-em {
-    font-family: "roboto-italic";
 }
 
 .result li.active a {
