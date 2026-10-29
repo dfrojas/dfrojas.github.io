@@ -32,6 +32,11 @@ google_analytics: G-K0VY1W90KD
 
 plugins:
   - jekyll-sitemap
+  - jekyll-toc
+
+toc:
+  min_level: 2
+  max_level: 3
 
 collections:
   dives:
@@ -54,6 +59,11 @@ defaults:
       path: "assets/img"
     values:
       image: true
+  - scope:
+      path: "_posts/software"
+      type: posts
+    values:
+      toc: true
 
 sass:
   sass_dir: assets/_sass
