@@ -19,7 +19,9 @@ layout: default
         </header>
 
         {% if page.categories contains 'software' %}
-          {% include post-toc.html %}
+          <div class="software-post-sidebar">
+            {% include post-toc.html %}
+          </div>
         {% endif %}
 
         <div class="post-content">
@@ -33,11 +35,6 @@ layout: default
             {{ content }}
           {% endif %}
         </div>
-        {% if page.categories contains 'software' %}
-          <div class="software-post-sidebar">
-            {% include post-author.html %}
-          </div>
-        {% endif %}
       </article>
     </div>
   </div>

@@ -1,11 +1,13 @@
 {% if page.toc %}
   {% assign post_toc = content | toc_only %}
   {% if post_toc contains '<li' %}
-    <nav class="post-toc" aria-labelledby="post-toc-title">
-      <details>
-        <summary class="post-toc-title" id="post-toc-title">Table of contents</summary>
+    <nav class="post-toc" aria-label="On this page">
+      <h2 class="post-toc-heading">On this page</h2>
+      <details open>
+        <summary class="post-toc-toggle">On this page</summary>
         {{ post_toc }}
       </details>
     </nav>
+    <script src="{{ '/assets/js/post-toc.js' | relative_url }}" defer></script>
   {% endif %}
 {% endif %}
